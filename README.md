@@ -30,3 +30,5 @@ squandering your opportunity. If a player gets a three joint mass close to diffe
 players mass, that player could get tricked and lose the game and the game is over.
 
 
+
+
