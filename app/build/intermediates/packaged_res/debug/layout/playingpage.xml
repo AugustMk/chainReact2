@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_animationn_bg"
+    tools:context=".playingPage">
+
+
+    <com.example.thechainreaction.Grid
+        android:id="@+id/Grid"
+        android:layout_width="604dp"
+        android:layout_height="1164dp"
+        custom:black="#E3E6E6"
+        custom:gridBlue="#2039F0"
+        custom:gridGreen="#21EB1E"
+        custom:gridPink="#EB1EBC "
+        custom:gridPurple="#FF5F15"
+        custom:gridPurple2="@color/purple_200"
+        custom:gridRed="#b31e26"
+        custom:gridSblue="#40e0d0"
+        custom:gridWhite="@color/white"
+        custom:gridYellow="#E4EF07"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.489"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="0.497">
+
+    </com.example.thechainreaction.Grid>
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="231dp"
+        android:layout_height="57dp"
+        android:background="@drawable/back_btn"
+        android:onClick="restartButton"
+        android:text="restart"
+        android:textColor="@color/purple_500"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/Grid" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="199dp"
+        android:layout_height="39dp"
+        android:text="Game in Progress"
+        android:textSize="24sp"
+        custom:layout_constraintBottom_toTopOf="@+id/Grid"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="0.685" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:drawable="@drawable/gradient_backgroup_playerspage"
+    android:duration="4000"/>
+    <item android:drawable="@drawable/gradient_backgroud_ii"
+        android:duration="4000"/>
+    <item android:drawable="@drawable/gradient_background_iv"
+        android:duration="4000"/>
+    <item android:drawable="@drawable/gradient_backgroud_iii"
+        android:duration="4000"/>
+</animation-list>

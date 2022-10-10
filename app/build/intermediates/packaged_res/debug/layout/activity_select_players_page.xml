@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroup_playerspage"
+    android:textAlignment="gravity"
+    tools:context=".selectPlayersPage">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage1"
+        android:text="2 players"
+        android:textColor="#EDE4E4"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage2"
+        android:text="3 players"
+        android:textColor="#2039F0"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage4"
+        android:text="4 players"
+        android:textColor="#40e0d0"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage5"
+        android:text="5 players"
+        android:textColor="#E4EF07"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage6"
+        android:text="6 players"
+        android:textColor="#FF5F15"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage7"
+        android:text="7 players"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage8"
+        android:text="8 players"
+        android:textColor="#EB1EBC "
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/players_button"
+        android:onClick="goPlayingPage9"
+        android:text="9 players"
+        android:textColor="#21EB1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:text="SELECT PLAYERS"
+        android:textColor="#FAF5F5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
