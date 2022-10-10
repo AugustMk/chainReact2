@@ -1,150 +1,154 @@
 [
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_gradient_backgroup_playerspage.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/gradient_backgroup_playerspage.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_grid_animationn_bg.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/grid_animationn_bg.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_restart.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\restart.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_back_btn.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/back_btn.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_grid_gradient_bg.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/grid_gradient_bg.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_gradient_backgroup_playerspage.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\gradient_backgroup_playerspage.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\layout_activity_select_players_page.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\layout\\activity_select_players_page.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_grid_bg.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/grid_bg.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-pngs-24:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "com.example.thechainreaction.app-merged_res-29:/layout_playingpage.xml.flat",
         "source": "com.example.thechainreaction.app-main-31:/layout/playingpage.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_gradient_backgroud_iii.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/gradient_backgroud_iii.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_icon.png.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\icon.png"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_undo_btn.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/undo_btn.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_gradient_backgroud_iii.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\gradient_backgroud_iii.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_grid_bg.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\grid_bg.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_play_again_btn.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\play_again_btn.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_redball.png.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/redball.png"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/layout/activity_main.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_icon.png.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/icon.png"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_grid_bg2.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/grid_bg2.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_restart.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/restart.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/layout_activity_select_players_page.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/layout/activity_select_players_page.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_undo_btn.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\undo_btn.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_gradient_backgroud_ii.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/gradient_backgroud_ii.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/layout_activity_dsiplay_winner.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/layout/activity_dsiplay_winner.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_gradient_background_iv.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\gradient_background_iv.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/xml_backup_rules.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_gradient_backgroud_ii.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\gradient_backgroud_ii.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_mainpage_background.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\mainpage_background.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_players_button.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/players_button.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_grid_animationn_bg.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\grid_animationn_bg.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_grid_bg2.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\grid_bg2.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_mainpage_background.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/mainpage_background.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\layout_activity_dsiplay_winner.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\layout\\activity_dsiplay_winner.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_redball.png.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\redball.png"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_gradient_background_iv.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/gradient_background_iv.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_grid_gradient_bg.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\grid_gradient_bg.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.thechainreaction.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\layout_playingpage.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\layout\\playingpage.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_play_again_btn.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/play_again_btn.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_players_button.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\players_button.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.thechainreaction.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_back_btn.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\back_btn.xml"
     },
     {
-        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_playtn.xml.flat",
-        "source": "com.example.thechainreaction.app-main-31:/drawable/playtn.xml"
+        "merged": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-merged_res-29:\\drawable_playtn.xml.flat",
+        "source": "C:\\Users\\augus\\.gradle\\daemon\\7.4\\com.example.thechainreaction.app-main-31:\\drawable\\playtn.xml"
     }
 ]
