@@ -61,7 +61,7 @@ public class Particles {
 
     // method that drq
     public void placeBalls(Canvas canvas){
-        for (int k = 0  ; k < 10 ; k++){
+        for (int k = 0  ; k < 9 ; k++){
             for(int i = 0 ;  i < 6; i++){
                 if(GameLogic.getGridArr()[k][i] != 0 && GameLogic.getGridArr()[k][i]/10 != 0){   // check whether the the cell is empty
                     drawBall(canvas , i, k ,GameLogic.getGridArr()[k][i]);

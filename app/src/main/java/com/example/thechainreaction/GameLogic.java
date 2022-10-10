@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 public class GameLogic {
     public static int playing = selectPlayersPage.play ;   // var for  the number of players
-    public static int[][]  gridArr = new int[10][6];              // arr for the grid
+    public static int[][]  gridArr = new int[9][6];              // arr for the grid
     private Button  restartGame ;
     public static ArrayList<Integer> currentPlayers =  new ArrayList<Integer>();  // lst for the players
     public static int  player = 1  ;                       // var for the current player
@@ -39,7 +39,7 @@ public class GameLogic {
          * @param none
          */
 
-        for (int k = 0; k < 10; k++) {
+        for (int k = 0; k < 9; k++) {
             for (int i = 0; i < 6; i++) {
                 gridArr[k][i] = 0;
             }
@@ -128,7 +128,7 @@ public class GameLogic {
          * checks whether the cell clicked is at the edge
          * @param (r)row and c(column)
          **/
-        return ((r==0 || r == 9) && c != 0 &&  c != 5)|| ( (c == 0 || c == 5) && r != 0  && r != 9);
+        return ((r==0 || r == 8) && c != 0 &&  c != 5)|| ( (c == 0 || c == 5) && r != 0  && r != 8);
     }
 
     private  boolean isCorner(int r , int c){
@@ -202,11 +202,12 @@ public class GameLogic {
          **/
 
         if (gridArr[r][c] / 10 != p) {
-            gridArr[r][c] = p * 10 +  (gridArr[r][c] % 10);   // change the color of the orbs to that of the exploding orbs
-            insertB(r , c);
-        } else{
-            insertB(r , c);
+            gridArr[r][c] = p * 10 +  (gridArr[r][c] % 10);   // change the color of the orbs to that of the exploding orb
         }
+        boolean canExplode = ((isCorner(r ,c ) && gridArr[r][c]% 10 != 1) ||  (isEdge(r ,c ) && gridArr[r][c]% 10 !=2 )|| (!(isCorner(r,c)) &&(!(isEdge(r,c))&&gridArr[r][c]% 10 !=3 )));
+
+        if (canExplode){insertB(r ,c ) ; }
+
     }
 
     // restart the game
@@ -302,41 +303,41 @@ public class GameLogic {
 
     }
 
-    public boolean isCellEmpty(int row, int column){
-        return gridArr[row][column]==0;
-    }
-    public  boolean isUnstableCell(int row, int column){
-        // return boolean: is this cell unstable
-        if (isCellEmpty(row,column)) return false;
-        else if (isCorner(row,column) && gridArr[row][column]%10 >1 ) return true;
-        else if (isEdge(row,column) && gridArr[row][column]%10 >2) return true;
-        else if (isCentre(row,column) && gridArr[row][column]%10 >3) return true;
-        return true;
-    }
-    public  boolean isUnstableGrid(){
-        // return boolean: are there any unstable cells
-        for (int row =0; row<10;row++){
-            for (int column = 0; column<6;column++){
-                if (isUnstableCell(row,column)){
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    public void explodeAll(){
-        //explodes unstable cells until the grid is stable
-        boolean unstable = isUnstableGrid();
-        while (unstable){
-            for (int row =0; row<10;row++){
-                for (int column = 0; column<6;column++){
-                    if (isUnstableCell(row,column)){
-                        explode(row,column,player);
-                    }
-                }
-            }
-            unstable = isUnstableGrid();
-        }
-    }
+//    public boolean isCellEmpty(int row, int column){
+//        return gridArr[row][column]==0;
+//    }
+//    public  boolean isUnstableCell(int row, int column){
+//        // return boolean: is this cell unstable
+//        if (isCellEmpty(row,column)) return false;
+//        else if (isCorner(row,column) && gridArr[row][column]%10 >1 ) return true;
+//        else if (isEdge(row,column) && gridArr[row][column]%10 >2) return true;
+//        else if (isCentre(row,column) && gridArr[row][column]%10 >3) return true;
+//        return true;
+//    }
+//    public  boolean isUnstableGrid(){
+//        // return boolean: are there any unstable cells
+//        for (int row =0; row<10;row++){
+//            for (int column = 0; column<6;column++){
+//                if (isUnstableCell(row,column)){
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
+//    }
+//
+//    public void explodeAll(){
+//        //explodes unstable cells until the grid is stable
+//        boolean unstable = isUnstableGrid();
+//        while (unstable){
+//            for (int row =0; row<10;row++){
+//                for (int column = 0; column<6;column++){
+//                    if (isUnstableCell(row,column)){
+//                        explode(row,column,player);
+//                    }
+//                }
+//            }
+//            unstable = isUnstableGrid();
+//        }
+//    }
 }
