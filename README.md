@@ -2,7 +2,7 @@
 
 Group name: [Chain Reaction ]
 
-Group members: [Mamba Mlibatisi, Goosen Michael, Madida Nonkululeko, Mochoeneng Augustin, Madodonke Chulumanco]
+Group members: [Mamba Mlibatisi, Goosen Michael, Madida Nonkululeko, Mochoeneng Augustine, Madodonke Chulumanco]
 
 Group mentor: [Insert your group mentor, if you have one (not mandatory)]
 
@@ -23,12 +23,15 @@ adjacent cell, and the initial cell loses as many spheres as its critical mass. 
 cause adjacent units to overload, and the chain reaction of explosions continues until
 each unit is stable. When a red cell explodes and there are green cells around, the
 green cells turn red, other explosion rules still follow. The same rules apply for the other
-colors. The winner is the one who removes the orbs of all other players To increase chances of winning, a player must get the corners - getting the corners
-offers the player an extraordinary chance to part whenever if the other player draws
+colors. The winner is the one who removes the orbs of all other players To increase chances of winning, a player must get the corners - getting the corners offers the player an extraordinary chance to part whenever if the other player draws
 near to it. Splitting with no different groups mass is of no utilization, you are simply
 squandering your opportunity. If a player gets a three joint mass close to different
 players mass, that player could get tricked and lose the game and the game is over.
 
+
+
+
+Assumption: From this game a player is expected to place one ball on the corners and the second ball is to cause an explosion,On the edges a third a ball causes an explosion. The balls are expected to move to other positions after the explosion occurs. The starting cell loses as many spheres as its critical mass in the explosion, and one sphere is added to each orthogonally adjacent cell. The chain reaction of explosions continues until each unit is stable because explosions overwhelm nearby units. for example, for two players,  when a red cell explodes nearby green cells, this causes  the green cells to turn red. The winner is the one who removes the orbs of all other players.
 
 
 
