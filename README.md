@@ -28,9 +28,9 @@ near to it. Splitting with no different groups mass is of no utilization, you ar
 squandering your opportunity. If a player gets a three joint mass close to different
 players mass, that player could get tricked and lose the game and the game is over.
 
-Tools used: We imported andriod annotation.*, nontent.*, graphics.*, util.*, view.*,widget.*,appcompat.*, os.*, contraintlayout.*.
+Tools used: We imported andriod annotation.*, content.*, graphics.*, util.*, view.*,widget.*,appcompat.*, os.*, contraintlayout.*.
 
-Concepts used: We used Custom classes. In GameLogic.java there is GameLogic class, in Grid.java there is a Grid subclass of Veiw, in MainActivity.java there is a MainActivity subclass of AppCompatActivity, in Particles.java there is a Particles class, in playingPage.java there is a playingPage subclass for AppCompatActivity and in selectPlayersPage.java there is a selectPlayersPage subclass for AppCompatActivity.      
+Concepts used: We used Custom classes. In GameLogic.java there is GameLogic class, in Grid.java there is a Grid subclass of Veiw, in MainActivity.java there is a MainActivity subclass of AppCompatActivity, in Particles.java there is a Particles class, in playingPage.java there is a playingPage subclass of AppCompatActivity and in selectPlayersPage.java there is a selectPlayersPage subclass of AppCompatActivity.      
 
 Assumption: From this game a player is expected to place one ball on the corners and the second ball is to cause an explosion,On the edges a third a ball causes an explosion. The balls are expected to move to other positions after the explosion occurs. The starting cell loses as many spheres as its critical mass in the explosion, and one sphere is added to each orthogonally adjacent cell. The chain reaction of explosions continues until each unit is stable because explosions overwhelm nearby units. for example, for two players,  when a red cell explodes nearby green cells, this causes  the green cells to turn red. The winner is the one who removes the orbs of all other players.
 
