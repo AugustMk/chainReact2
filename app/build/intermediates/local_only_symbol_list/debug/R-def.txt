@@ -18,6 +18,11 @@ color teal_200
 color teal_700
 color white
 drawable back_btn
+drawable bg1
+drawable bg2
+drawable bg3
+drawable bg4
+drawable bg5
 drawable gradient_backgroud_ii
 drawable gradient_backgroud_iii
 drawable gradient_background_iv
@@ -35,6 +40,7 @@ drawable players_button
 drawable playtn
 drawable redball
 drawable restart
+drawable restartgamebtn
 drawable undo_btn
 id Grid
 id btnResta
@@ -51,9 +57,9 @@ id grid
 id layout
 id playAgainbtn
 id playPage
+id textUpdate
 id textView
 id textView2
-id textView3
 id textView4
 id textView5
 id winnerText

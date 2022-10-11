@@ -59,7 +59,7 @@ public class Particles {
      9 - > PLAYER 9 : GREEN
      */
 
-    // method that drq
+    // method that draw
     public void placeBalls(Canvas canvas){
         for (int k = 0  ; k < 9 ; k++){
             for(int i = 0 ;  i < 6; i++){
@@ -70,10 +70,5 @@ public class Particles {
         }
 
     }
-
-
-
-
-
 
 }

@@ -1,8 +1,13 @@
 package com.example.thechainreaction;
 
 
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -13,6 +18,7 @@ public class GameLogic {
     private Button  restartGame ;
     public static ArrayList<Integer> currentPlayers =  new ArrayList<Integer>();  // lst for the players
     public static int  player = 1  ;                       // var for the current player
+    private TextView update ;
 
 
     public  GameLogic(){
@@ -38,7 +44,6 @@ public class GameLogic {
          *  insert  zeros into the grid to represent an empty cell
          * @param none
          */
-
         for (int k = 0; k < 9; k++) {
             for (int i = 0; i < 6; i++) {
                 gridArr[k][i] = 0;
@@ -68,7 +73,8 @@ public class GameLogic {
          * @param none
          */
         boolean firstplayerturn = this.player == playing || currentPlayers.size()==1 || currentPlayers.indexOf(player) == currentPlayers.size();
-        this.player = (firstplayerturn) ?  currentPlayers.get(0) : currentPlayers.get(player);
+        this.player = (firstplayerturn) ?  currentPlayers.get(0) : currentPlayers.get(player%currentPlayers.size());
+        update.setText("player " + this.player + "'s turn" );
     }
 
     public static int nextPlayer(){
@@ -77,7 +83,7 @@ public class GameLogic {
          * @param none
          */
         boolean firstplayerturn = player == playing || currentPlayers.size()==1 || currentPlayers.indexOf(player) == currentPlayers.size();
-        return (firstplayerturn) ?  currentPlayers.get(0) : currentPlayers.get(player);
+        return (firstplayerturn) ?  currentPlayers.get(0) : currentPlayers.get(player%currentPlayers.size());
     }
     // get the grid array
     public static int[][] getGridArr() {
@@ -85,10 +91,13 @@ public class GameLogic {
         return gridArr;
     }
 
-    public void setbtn(Button btn){
+
+    public void setviews(Button btn , TextView update ){
         this.restartGame = btn ;
+        this.update = update ;
+
     }
-    public  boolean insertB(int r , int c ){
+    public  boolean insertB(int r , int c , boolean explode ){
 
         /**
          * placing the  player's orb into the array
@@ -98,7 +107,10 @@ public class GameLogic {
         if(gridArr[r][c] ==0){   //checks if the cell is empty
             gridArr[r][c] = player* 10 +1  ;
             return true ;}
-
+        else if (explode){
+            gridArr[r][c] =gridArr[r][c] +1;
+            return true ;
+        }
         else if(gridArr[r][c]/ 10 != player){  // checks if the cell clicked contains the balls of the player
             return false ;
         }
@@ -139,7 +151,7 @@ public class GameLogic {
         return (r == 0 && (c == 0|| c == 5))|| ( r == 8 && ( c == 0 || c == 5));
     }
     private boolean isCentre(int r, int c ){
-        return !(isEdge(r,c) || isCorner(r,c));
+        return !isEdge(r,c) && !isCorner(r,c);
     }
 
 
@@ -194,6 +206,27 @@ public class GameLogic {
         gridArr[r][c] = 0 ;     // remove the orbs in the exploding cell
     }
 
+    public void handleMultipleExplosions() {
+        while(isUnstableGrid()  && Grid.rounds >= playing ){
+            handleUnstableGrid();
+        }
+
+    }
+
+    private void handleUnstableGrid(){
+        for (int r = 0; r < 9; r++) {
+            for (int c = 0; c < 6; c++){
+                if (isCorner(r , c)  && gridArr[r][c]%10 ==2) {     // checks if the  cell clicked is at the corner and cotains one orb
+                    handleCornerExplosion(r, c,player);
+                } else if(isEdge(r , c ) && gridArr[r][c]%10 ==3  ) {   // checks if the  cell clicked is at the edge and cotains 2 orbs
+                    handleEdgeExplosion(r, c, player);
+                } else if (gridArr[r][c]%10 == 4){          //checks if the  cell contains 3 orbs ;
+                    handleExplosion(r , c , player);
+                }
+            }
+        }
+    }
+
     // move
     public void explode( int r , int c , int p) {
         /**
@@ -206,7 +239,7 @@ public class GameLogic {
         }
         boolean canExplode = ((isCorner(r ,c ) && gridArr[r][c]% 10 != 1) ||  (isEdge(r ,c ) && gridArr[r][c]% 10 !=2 )|| (!(isCorner(r,c)) &&(!(isEdge(r,c))&&gridArr[r][c]% 10 !=3 )));
 
-        if (canExplode){insertB(r ,c ) ; }
+        if (canExplode){insertB(r ,c  , false) ; }
 
     }
 
@@ -228,22 +261,21 @@ public class GameLogic {
         for(int k = 1 ; k <= playing  ; k ++){
             currentPlayers.add(k) ;
         }
-        player = currentPlayers.get(0); ;          //reset the  player counter
+        player = currentPlayers.get(0);          //reset the  player counter
         restartGame.setVisibility(View.GONE);
+        update.setText("player " + this.player + "'s turn" );
+        //cl.setBackground(Drawable.createFromPath("@drawable/bg1"));
 
     }
 
-    //checks if only one player is playing and declare the winner
-//    public  boolean checkWin(){
-//         return currentPlayers.size()==1 ;
-//    }
+
 
 
     // checks if a player's orbs have been elimated and removes the player from playing
     public void eliminatePlayer( ) {
         /**
          *  removes  the players from the  grid  if elimated
-         * @param (none
+         * @param none
          **/
         if (Grid.rounds >= playing) {
             for (Iterator<Integer> iterator = currentPlayers.iterator(); iterator.hasNext(); ) {
@@ -290,6 +322,11 @@ public class GameLogic {
         boolean winner = currentPlayers.size()== 1 ;
         if(winner){
             restartGame.setVisibility(View.VISIBLE);
+            update.setText("player " + getWinner() + " won" );
+            player = currentPlayers.get(0);
+
+           // cl.setBackground(Drawable.createFromPath("@drawable/bg2"));
+
         }
         return  winner;
     }
@@ -303,29 +340,30 @@ public class GameLogic {
 
     }
 
-//    public boolean isCellEmpty(int row, int column){
-//        return gridArr[row][column]==0;
-//    }
-//    public  boolean isUnstableCell(int row, int column){
-//        // return boolean: is this cell unstable
-//        if (isCellEmpty(row,column)) return false;
-//        else if (isCorner(row,column) && gridArr[row][column]%10 >1 ) return true;
-//        else if (isEdge(row,column) && gridArr[row][column]%10 >2) return true;
-//        else if (isCentre(row,column) && gridArr[row][column]%10 >3) return true;
-//        return true;
-//    }
-//    public  boolean isUnstableGrid(){
-//        // return boolean: are there any unstable cells
-//        for (int row =0; row<10;row++){
-//            for (int column = 0; column<6;column++){
-//                if (isUnstableCell(row,column)){
-//                    return true;
-//                }
-//            }
-//        }
-//        return false;
-//    }
-//
+    public boolean isCellEmpty(int row, int column){
+        return gridArr[row][column]==0;
+    }
+
+    private  boolean isUnstableCell(int row, int column){
+        // return boolean: is this cell unstable
+        if (isCellEmpty(row,column)) return false;
+        else if (isCorner(row,column) && gridArr[row][column]%10 >1 ) return true;
+        else if (isEdge(row,column) && gridArr[row][column]%10 >2) return true;
+        else if (isCentre(row,column) && gridArr[row][column]%10 >3) return true;
+        return true;
+    }
+    private  boolean isUnstableGrid(){
+        // return boolean: are there any unstable cells
+        for (int row =0; row< 9;row++){
+            for (int column = 0; column<6;column++){
+                if (isUnstableCell(row,column)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 //    public void explodeAll(){
 //        //explodes unstable cells until the grid is stable
 //        boolean unstable = isUnstableGrid();

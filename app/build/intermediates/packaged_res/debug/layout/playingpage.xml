@@ -5,7 +5,7 @@
     android:id="@+id/playPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grid_animationn_bg"
+    android:background="@drawable/bg5"
     tools:context=".playingPage">
 
 
@@ -25,36 +25,39 @@
         custom:gridYellow="#E4EF07"
         custom:layout_constraintBottom_toBottomOf="parent"
         custom:layout_constraintEnd_toEndOf="parent"
-        custom:layout_constraintHorizontal_bias="0.489"
         custom:layout_constraintStart_toStartOf="parent"
         custom:layout_constraintTop_toTopOf="parent"
-        custom:layout_constraintVertical_bias="0.497">
+        custom:layout_constraintVertical_bias="0.569">
 
     </com.example.thechainreaction.Grid>
 
     <Button
         android:id="@+id/btnResta"
-        android:layout_width="231dp"
-        android:layout_height="57dp"
-        android:background="@drawable/back_btn"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:background="@drawable/restartgamebtn"
         android:onClick="restartButton"
         android:text="restart"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/white"
         custom:layout_constraintBottom_toBottomOf="parent"
         custom:layout_constraintEnd_toEndOf="parent"
         custom:layout_constraintStart_toStartOf="parent"
         custom:layout_constraintTop_toBottomOf="@+id/Grid" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="199dp"
-        android:layout_height="39dp"
+        android:id="@+id/textUpdate"
+        android:layout_width="249dp"
+        android:layout_height="38dp"
         android:text="Game in Progress"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="#E6DFDF"
+        android:textSize="27sp"
+        android:textStyle="bold"
         custom:layout_constraintBottom_toTopOf="@+id/Grid"
         custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.561"
         custom:layout_constraintStart_toStartOf="parent"
         custom:layout_constraintTop_toTopOf="parent"
-        custom:layout_constraintVertical_bias="0.685" />
+        custom:layout_constraintVertical_bias="0.466" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

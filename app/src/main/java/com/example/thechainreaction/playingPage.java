@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -17,22 +18,27 @@ import android.widget.TextView;
 public class playingPage extends AppCompatActivity {
     private Grid grid ;
     private String players ;
-    private TextView winner;
+    private TextView field;
+    private TextView elm ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.playingpage);
         ConstraintLayout constraintLayout = findViewById(R.id.playPage);
 
-        AnimationDrawable animationDrawable =(AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2500);
-        animationDrawable.setExitFadeDuration(5000);
-        animationDrawable.start();
+//        AnimationDrawable animationDrawable =(AnimationDrawable) constraintLayout.getBackground();
+//        animationDrawable.setEnterFadeDuration(2500);
+//        animationDrawable.setExitFadeDuration(5000);
+//        animationDrawable.start();
         //players = findViewById(R.id.numPlayers).toString();
         grid = findViewById(R.id.Grid);
         Button btn = findViewById(R.id.btnResta);
+        field = findViewById(R.id.textUpdate);
+
+        field.setText("player " + 1 + "'s turn");
         btn.setVisibility(View.GONE);
-        grid.game(btn);
+        grid.game( btn , field);
 
         //winner = findViewById(R.id.showWinner);
 

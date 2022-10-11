@@ -8,6 +8,14 @@
         "source": "com.example.thechainreaction.app-main-31:/drawable/grid_animationn_bg.xml"
     },
     {
+        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_bg5.jpg.flat",
+        "source": "com.example.thechainreaction.app-main-31:/drawable/bg5.jpg"
+    },
+    {
+        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_bg3.jpg.flat",
+        "source": "com.example.thechainreaction.app-main-31:/drawable/bg3.jpg"
+    },
+    {
         "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_back_btn.xml.flat",
         "source": "com.example.thechainreaction.app-main-31:/drawable/back_btn.xml"
     },
@@ -48,8 +56,16 @@
         "source": "com.example.thechainreaction.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_restartgamebtn.xml.flat",
+        "source": "com.example.thechainreaction.app-main-31:/drawable/restartgamebtn.xml"
+    },
+    {
         "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.thechainreaction.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_bg2.jpg.flat",
+        "source": "com.example.thechainreaction.app-main-31:/drawable/bg2.jpg"
     },
     {
         "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -66,6 +82,10 @@
     {
         "merged": "com.example.thechainreaction.app-merged_res-29:/layout_activity_main.xml.flat",
         "source": "com.example.thechainreaction.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_bg4.jpg.flat",
+        "source": "com.example.thechainreaction.app-main-31:/drawable/bg4.jpg"
     },
     {
         "merged": "com.example.thechainreaction.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -142,6 +162,10 @@
     {
         "merged": "com.example.thechainreaction.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "com.example.thechainreaction.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_bg1.jpg.flat",
+        "source": "com.example.thechainreaction.app-main-31:/drawable/bg1.jpg"
     },
     {
         "merged": "com.example.thechainreaction.app-merged_res-29:/drawable_playtn.xml.flat",

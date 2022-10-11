@@ -10,14 +10,11 @@ public class selectPlayersPage extends AppCompatActivity {
 
     public static int play ;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_players_page);
-
     }
-
    public void goPlayingPage1(View view){
         play = 2;
         Intent intent = new Intent(this,playingPage.class);

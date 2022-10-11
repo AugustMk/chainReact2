@@ -1,4 +1,4 @@
-#Mon Oct 10 22:35:44 CAT 2022
+#Tue Oct 11 19:50:26 CAT 2022
 base.2=C\:\\Users\\augus\\AndroidStudioProjects\\TheChainReaction\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
 path.2=10/classes.dex
 base.1=C\:\\Users\\augus\\AndroidStudioProjects\\TheChainReaction\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

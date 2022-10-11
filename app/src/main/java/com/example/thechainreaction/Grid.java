@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -15,6 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,6 +32,7 @@ public class Grid  extends View {
     private int player ;                      // var for the current player
     private final Particles particles ;       // game logic class
     Boolean winner = false ;
+
     public HashMap<Integer , Integer > playerColors = new HashMap<Integer , Integer >();  // hp for the colors of the player's orbs
 
 
@@ -72,10 +75,12 @@ public class Grid  extends View {
 
         if (e.getAction() == MotionEvent.ACTION_DOWN) {   // checks if the user clicked inside the grid
           if(!logic.isWin()){                         //checks if there's a win
-              if ( logic.insertB((int) Math.ceil(e.getY() / sizeC) - 1, (int) Math.ceil(e.getX() / sizeC) - 1) ) {  //  determine whih row % column was clicked and populate the corrosponding  array element
+              if ( logic.insertB((int) Math.ceil(e.getY() / sizeC) - 1, (int) Math.ceil(e.getX() / sizeC) - 1 , false) ) {  //  determine whih row % column was clicked and populate the corrosponding  array element
+                 //logic.handleMultipleExplosions();
                   logic.eliminatePlayer();                       //eliminate player
                   logic.setPlayer();                    //change the player
                   player = GameLogic.player;
+                  logic.isWin() ;
                   invalidate();                               //calls the onDraw method
                   rounds++ ;
                   pnt.setColor(playerColors.get(GameLogic.nextPlayer())); // change the color of the grid
@@ -83,7 +88,6 @@ public class Grid  extends View {
                   invalidate();                              //calls the onDraw method
               }
           }
-
             invalidate();                                   //calls the onDraw method
         }
 
@@ -95,13 +99,12 @@ public class Grid  extends View {
 
     @Override
     protected void onDraw(Canvas canvas){
-        pnt.setColor( playerColors.get(player));
+       if (rounds == 0 ) { pnt.setColor( playerColors.get(1));} else {pnt.setColor( playerColors.get(player));}
         drawGrid(canvas);
-        particles.placeBalls(canvas);
-
-        if(logic.isWin()){
-            winnerDisplay(canvas);
-        }
+       particles.placeBalls(canvas);
+//        if(logic.isWin()){
+//            winnerDisplay(canvas);
+//        }
 
 
     }
@@ -135,21 +138,23 @@ public class Grid  extends View {
         Paint pnt2 = new Paint();
         pnt2.setColor(color);
         pnt2.setAntiAlias(true);
-        pnt2.setStyle(Paint.Style.FILL);
-        pnt.setTextSize(55);
-        canvas.drawRect((float )(sizeC*1.5) , (float)(sizeC*3.5) , (float)(sizeC*4.5) , (float) (sizeC*5.5) , pnt2);
+        //pnt2.setStyle(Paint.Style.FILL);
+        pnt.setTextSize(65);
+       // canvas.drawRect((float )(sizeC*1.5) , (float)(sizeC*3.5) , (float)(sizeC*4.5) , (float) (sizeC*5.5) , pnt2);
         canvas.drawText("player "+ logic.getWinner() +" has won" , (float) (sizeC*1.65)  , (float)(sizeC*4.5) , pnt );
     }
 
-    public void game(Button btn){
-        logic.setbtn(btn);
+    public void game(Button btn , TextView update  ){
+        logic.setviews(btn , update );
 
     }
     //restarting the game
     public void restartGame() {
-        pnt.setColor( playerColors.get(player));
+        player = GameLogic.player ;
+        pnt.setColor( playerColors.get(1));
         rounds = 0 ;
         logic.restart();
+
     }
 
 

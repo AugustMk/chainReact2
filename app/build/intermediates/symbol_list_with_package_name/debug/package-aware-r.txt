@@ -2455,6 +2455,11 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_btn
+drawable bg1
+drawable bg2
+drawable bg3
+drawable bg4
+drawable bg5
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2535,6 +2540,7 @@ drawable players_button
 drawable playtn
 drawable redball
 drawable restart
+drawable restartgamebtn
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2991,9 +2997,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textUpdate
 id textView
 id textView2
-id textView3
 id textView4
 id textView5
 id text_input_end_icon
