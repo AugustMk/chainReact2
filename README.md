@@ -34,5 +34,5 @@ Concepts used: We used Custom classes. In GameLogic.java there is GameLogic clas
 
 Assumption: From this game a player is expected to place one ball on the corners and the second ball is to cause an explosion,On the edges a third a ball causes an explosion. The balls are expected to move to other positions after the explosion occurs. The starting cell loses as many spheres as its critical mass in the explosion, and one sphere is added to each orthogonally adjacent cell. The chain reaction of explosions continues until each unit is stable because explosions overwhelm nearby units. for example, for two players,  when a red cell explodes nearby green cells, this causes  the green cells to turn red. The winner is the one who removes the orbs of all other players.
 
-
+Limitation: Although we had hoped to make the spheres a little larger, we were unable to do so. Due to scheduling constraints, we were unable to add a refresh button to the Grid Page as we had anticipated.
 
