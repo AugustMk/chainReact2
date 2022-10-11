@@ -16,8 +16,8 @@ critical mass is equal to the number of orthogonal neighbors. 4 for regular cell
 border cells and 2 for corner cells. All cells are initially empty. The red and green
 players take turns placing &quot;spheres&quot; of the corresponding color. A red player can only
 place (red) balls in squares that are empty or already contain one or more red balls.
-When two or more spheres are placed in the same cell, they stack. When a battery is
-charged with a number of spheres equal to its critical mass, the battery explodes
+When two or more spheres are placed in the same cell, they stack. When a cell is
+charged with a number of spheres equal to its critical mass, the spheres explode
 immediately. As a result of the explosion, a sphere is added to each orthogonally
 adjacent cell, and the initial cell loses as many spheres as its critical mass. Explosions
 cause adjacent units to overload, and the chain reaction of explosions continues until
